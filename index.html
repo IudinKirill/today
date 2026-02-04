@@ -26,7 +26,7 @@
     <div x-data="{
     categories: [],
     message: '',
-    }" x-init="fetch('http://f1226797.xsph.ru/api/categories')
+    }" x-init="fetch('http://f1227060.xsph.ru/api/categories')
     .then(response => response.json())
     .then(data => categories = data);
     console.log(categories);">
@@ -52,7 +52,7 @@
                 </ul>
             </div>
             <button
-            @click = "fetch('http://f1226797.xsph.ru/api/categories/'+category.id,{
+            @click = "fetch('http://f1227060.xsph.ru/api/categories/'+category.id,{
             method: 'DELETE',
             headers: { 'Accept': 'application/json' }
             })
